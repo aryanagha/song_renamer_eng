@@ -33,10 +33,6 @@ This bot is for downloading files from youtube or Rename your songs , videos , a
 
 /upload : reply to your url .
     
-    `http://aaa.bbb.ccc/ddd.eee` | **fff.ggg**
-    or
-    `http://aaa.bbb.ccc/ddd.eee`
-
 /c2v : reply to your document to convert it into streamable video.
     
 /rnv : reply to your video. Example:
