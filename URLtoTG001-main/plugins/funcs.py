@@ -49,12 +49,13 @@ This bot is for downloading files from youtube or Rename your songs , videos , a
 /rnf : reply to your document. Example:
 
     `/rnf | filename.ext`
+    
 """
 
 @Client.on_message(filters.command(["start"]))
 async def start(client , m):
     """Send a message when the command /start is issued."""
-    await m.reply_text(text=f"Hi\n\nSee /help for More Info!")
+    await m.reply_text(text=f"Hi\n\nSee /help for More Info!   for other bots and updates  @The_Aryana_PY")
 
     
 @Client.on_message(filters.command(["help"]))
