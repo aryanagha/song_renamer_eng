@@ -26,10 +26,10 @@ from helpers.link_info import linfo2
 logger = logging.getLogger(__name__)
 
 HELP_TXT = """
-A Simple Telegram Bot to 
-Upload Files From **Direct** and **Google Drive** and **Youtube** Links,
-Convert Document Media to Video,
-and Rename Audio/Video/Document Files.
+Hi 
+Happy to see you here 
+This bot is for downloading files from youtube or Rename your songs , videos , and documents
+
 
 /upload : reply to your url .
     
@@ -45,14 +45,14 @@ and Rename Audio/Video/Document Files.
     
 /rna : reply to your audio. \"`-`\" : leave without change.
 
-    `/rna | audioname | title | artists`
-    `/rna | audioname`
-    `/rna | - | title`
-    `/rna | - | - | artists`
+    `/rna / audioname / title / artists`
+    `/rna / audioname`
+    `/rna / - / title`
+    `/rna / - / - / artists`
     
 /rnf : reply to your document. Example:
 
-    `/rnf | filename.ext`
+    `/rnf / filename.ext`
 """
 
 @Client.on_message(filters.command(["start"]))
@@ -74,7 +74,7 @@ async def rnv1(client , u):
     elif not Config.AUTH_USERS:
         await rnv2(client , u)
     else:
-        await u.reply_text(text=f"sorry ! you cant use this bot.\n\ndeploy your own bot:\n[Repository_Link](https://github.com/prxpostern/URLtoTG001)", quote=True, disable_web_page_preview=True)
+        await u.reply_text(text=f"sorry ! you cant use this bot. :)", quote=True, disable_web_page_preview=True)
         return
     
 @Client.on_message(filters.private & filters.command(["rna"]))
@@ -85,7 +85,7 @@ async def rna1(client , u):
     elif not Config.AUTH_USERS:
         await rna2(client , u)
     else:
-        await u.reply_text(text=f"sorry ! you cant use this bot.\n\ndeploy your own bot:\n[Repository_Link](https://github.com/prxpostern/URLtoTG001)", quote=True, disable_web_page_preview=True)
+        await u.reply_text(text=f"sorry ! you cant use this bot. :)", quote=True, disable_web_page_preview=True)
         return
 
 @Client.on_message(filters.private & filters.command(["rnf"]))
@@ -96,7 +96,7 @@ async def rnf1(client , u):
     elif not Config.AUTH_USERS:
         await rnf2(client , u)
     else:
-        await u.reply_text(text=f"sorry ! you cant use this bot.\n\ndeploy your own bot:\n[Repository_Link](https://github.com/prxpostern/URLtoTG001)", quote=True, disable_web_page_preview=True)
+        await u.reply_text(text=f"sorry ! you cant use this bot. :)", quote=True, disable_web_page_preview=True)
         return
    
 @Client.on_message(filters.private & filters.command(["c2v"]))
@@ -107,7 +107,7 @@ async def to_video1(client , u):
     elif not Config.AUTH_USERS:
         await to_video2(client , u) 
     else:
-        await u.reply_text(text=f"sorry ! you cant use this bot.\n\ndeploy your own bot:\n[Repository_Link](https://github.com/prxpostern/URLtoTG001)", quote=True, disable_web_page_preview=True)
+        await u.reply_text(text=f"sorry ! you cant use this bot.:)", quote=True, disable_web_page_preview=True)
         return
     
 @Client.on_message(filters.private & (filters.audio | filters.document | filters.video))
@@ -127,5 +127,5 @@ async def leecher1(client , u):
     elif not Config.AUTH_USERS:
         await leecher2(client , u)
     else:
-        await u.reply_text(text=f"sorry ! you cant use this bot.\n\ndeploy your own bot:\n[Repository_Link](https://github.com/prxpostern/URLtoTG001)", quote=True, disable_web_page_preview=True)
+        await u.reply_text(text=f"sorry ! you cant use this bot.:)", quote=True, disable_web_page_preview=True)
         return
