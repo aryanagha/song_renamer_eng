@@ -45,14 +45,14 @@ This bot is for downloading files from youtube or Rename your songs , videos , a
     
 /rna : reply to your audio. \"`-`\" : leave without change.
 
-    `/rna / audioname / title / artists`
-    `/rna / audioname`
-    `/rna / - / title`
-    `/rna / - / - / artists`
+    `/rna | audioname | title | artists`
+    `/rna | audioname`
+    `/rna | - | title`
+    `/rna | - | - | artists`
     
 /rnf : reply to your document. Example:
 
-    `/rnf / filename.ext`
+    `/rnf | filename.ext`
 """
 
 @Client.on_message(filters.command(["start"]))
