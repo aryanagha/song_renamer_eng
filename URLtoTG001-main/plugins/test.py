@@ -1,14 +1,6 @@
 #Aryana yt downloader test with force sub
 
 
-
-from helpers.url_uploader import leecher2
-from main import Config
-from pyrogram import filters
-from pyrogram import Client
-import math, os, time, datetime, aiohttp, asyncio, mimetypes, logging
-from helpers.file_handler import send_to_transfersh_async, progress
-
 HELP_TXT = """
 سلام 
 این بات برای دانلود فیلم از یوتیوب میباشد 
